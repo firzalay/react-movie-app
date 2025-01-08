@@ -36,7 +36,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    padding: 2rem 0;
 
     .movie-content {
       background-color: rgb(255, 255, 255);  
