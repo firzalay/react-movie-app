@@ -12,7 +12,8 @@ export const getMovieList = async () => {
     return movie.data.results;
 };
 
-// export const searchMovies = async () => {
-//     const search = await axios.get("");
-//     return;
-// };
+export const searchMovies = async (keywords) => {
+    const search = await axios.get(`${import.meta.env.VITE_APP_BASEURL}/search/movie?query=${keywords}`, options);
+
+    return search.data.results;
+};
